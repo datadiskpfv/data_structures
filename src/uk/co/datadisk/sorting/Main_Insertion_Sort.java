@@ -1,4 +1,4 @@
-package uk.co.datadisk;
+package uk.co.datadisk.sorting;
 
 public class Main_Insertion_Sort {
 
