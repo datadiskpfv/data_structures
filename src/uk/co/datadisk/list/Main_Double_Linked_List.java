@@ -9,8 +9,6 @@ public class Main_Double_Linked_List {
     Employee dominic = new Employee("Dominic", "Valle", 1002);
     Employee jessica = new Employee("Jessica", "Valle", 1003);
 
-    Employee will = new Employee("Will", "Hay", 1004);
-
     EmployeeDoubleLinkedList list = new EmployeeDoubleLinkedList();
 
     list.addToFront(paul);
@@ -19,7 +17,20 @@ public class Main_Double_Linked_List {
     list.addToFront(jessica);
 
     list.printList();
+    System.out.println("List size: " + list.getSize());
 
+    Employee will = new Employee("Will", "Hay", 1004);
+    list.addToEnd(will);
 
+    list.printList();
+    System.out.println("List size: " + list.getSize());
+
+    list.removeFromFront();
+    list.printList();
+    System.out.println("List size: " + list.getSize());
+
+    list.removeFromEnd();
+    list.printList();
+    System.out.println("List size: " + list.getSize());
   }
 }
