@@ -1,6 +1,5 @@
-package uk.co.datadisk.list;
+package uk.co.datadisk.linkedlist;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
@@ -27,7 +26,7 @@ public class Main_Vector {
 
     employeeList.set(2, new Employee("Will", "Hay", 1004));
     employeeList.forEach(employee -> System.out.println(employee));
-    System.out.println("Employee list size: " + employeeList.size());
+    System.out.println("Employee linkedlist size: " + employeeList.size());
 
     employeeList.add(2, new Employee("Dominic", "Valle", 1002));
     employeeList.forEach(employee -> System.out.println(employee));

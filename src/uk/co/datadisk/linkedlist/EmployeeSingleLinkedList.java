@@ -1,4 +1,4 @@
-package uk.co.datadisk.list;
+package uk.co.datadisk.linkedlist;
 
 public class EmployeeSingleLinkedList {
 

@@ -1,4 +1,4 @@
-package uk.co.datadisk.list;
+package uk.co.datadisk.linkedlist;
 
 public class EmployeeDoubleLinkedList {
 
@@ -88,5 +88,36 @@ public class EmployeeDoubleLinkedList {
     size--;
     removedNode.setPrevious(null);
     return removedNode;
+  }
+
+  public boolean addBefore(Employee newEmployee, Employee existingEmployee){
+
+    if(head == null){
+      return false;
+    }
+
+    // find existing employee
+    EmployeeDoubleNode current = head;
+    while(current != null && !current.getEmployee().equals(existingEmployee)){
+      current = current.getNext();
+    }
+
+    if(current == null) {
+      return false;
+    }
+
+    EmployeeDoubleNode newNode = new EmployeeDoubleNode(newEmployee);
+    newNode.setPrevious(current.getPrevious());
+    newNode.setNext(current);
+    current.setPrevious(newNode);
+
+    if(head == current){
+      head = current;
+    } else {
+      newNode.getPrevious().setNext(newNode);
+    }
+
+    size++;
+    return true;
   }
 }

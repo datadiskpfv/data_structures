@@ -1,4 +1,4 @@
-package uk.co.datadisk.list;
+package uk.co.datadisk.linkedlist;
 
 public class Main_Double_Linked_List {
 
@@ -15,6 +15,9 @@ public class Main_Double_Linked_List {
     list.addToFront(lorraine);
     list.addToFront(dominic);
     list.addToFront(jessica);
+
+    Employee graham = new Employee("Graham", "Moffitt", 1005);
+    list.addBefore(graham, dominic);
 
     list.printList();
     System.out.println("List size: " + list.getSize());

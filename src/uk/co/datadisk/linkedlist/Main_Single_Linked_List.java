@@ -1,4 +1,4 @@
-package uk.co.datadisk.list;
+package uk.co.datadisk.linkedlist;
 
 public class Main_Single_Linked_List {
 
@@ -15,8 +15,8 @@ public class Main_Single_Linked_List {
     list.addToFront(dominic);
     list.addToFront(jessica);
 
-    System.out.println("Is linked list empty: " + list.isEmpty());
-    System.out.println("Size of linked list: " + list.getSize());
+    System.out.println("Is linked linkedlist empty: " + list.isEmpty());
+    System.out.println("Size of linked linkedlist: " + list.getSize());
 
     list.printList();
 
