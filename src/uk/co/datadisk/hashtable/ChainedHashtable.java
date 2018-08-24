@@ -10,7 +10,7 @@ public class ChainedHashtable {
   private LinkedList<StoredEmployee>[] hashtable;
 
   public ChainedHashtable() {
-    hashtable = new LinkedList[10];
+    hashtable = new LinkedList[50];
     for (int i = 0; i < hashtable.length; i++) {
       hashtable[i] = new LinkedList<>();
     }
@@ -20,6 +20,7 @@ public class ChainedHashtable {
     // You can use different hashing algorithms to try and avoid collisions
     //return key.length() % hashtable.length;
     return Math.abs(key.hashCode() % hashtable.length);
+    //return Math.abs((key.hashCode() + key.hashCode()) % hashtable.length);
   }
 
   public void put(String key, Employee employee){
