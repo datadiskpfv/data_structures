@@ -2,7 +2,7 @@ package uk.co.datadisk.hashtable;
 
 import uk.co.datadisk.linkedlist.Employee;
 
-public class Main_Simple_Hashtable {
+public class Main_Simple_Hashtable_Linear_Probing {
 
   public static void main(String[] args) {
 
@@ -16,20 +16,23 @@ public class Main_Simple_Hashtable {
 
     Employee x = new Employee("x", "Hay", 1005);
 
-    SimpleHashtable ht = new SimpleHashtable();
+    SimpleHashtableLinearProbing ht = new SimpleHashtableLinearProbing();
 
     ht.put("valle1", paul);
     ht.put("valle12", lorraine);
     ht.put("valle123", dominic);
     ht.put("valle234", jessica);
-    ht.put("x", x);
-    ht.put("", x);
     ht.printHashtable();
 
     ht.put("hay", will);
     ht.printHashtable();
 
-    System.out.println(ht.get("hay"));
-    System.out.println(ht.get("x"));
+    System.out.println(ht.get("valle234"));
+
+    ht.remove("valle12");
+    ht.remove("valle123");
+    ht.printHashtable();
+    System.out.println("Find jessica: " + ht.get("valle234"));
+
   }
 }

@@ -25,6 +25,7 @@ public class SimpleHashtable {
 
   public Employee get(String key){
     int hashedKey = hashKey(key);
+    System.out.println("Hashed Key: " + hashedKey);
     return hashTable[hashedKey];
   }
 
