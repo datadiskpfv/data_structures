@@ -29,7 +29,27 @@ public class MaxHeap {
 
         heap[index] = heap[size - 1];
 
+        if(index == 0 || heap[index] < heap[parent]) {
+            fixHeapBelow(index, size - 1);
+        } else {
+            fixHeapAbove(index);
+        }
 
+        size--;
+        return deletedValue;
+    }
+
+    public void sort() {
+
+        // Once a heap is sorted then it's NO LONGER A HEAP
+        int lastHeapIndex = size - 1;
+        for (int i = 0; i < lastHeapIndex; i++) {
+            int tmp = heap[0];
+            heap[0] = heap[lastHeapIndex - i];
+            heap[lastHeapIndex - i] = tmp;
+
+            fixHeapBelow(0, lastHeapIndex - i - 1);
+        }
     }
 
     private void fixHeapAbove(int index) {
@@ -71,12 +91,17 @@ public class MaxHeap {
         }
     }
 
-
-
-
-
     public boolean isFull() {
         return size == heap.length;
+    }
+
+    public void printHeap() {
+        for (int i = 0; i < size; i++) {
+            System.out.print(heap[i]);
+            System.out.print(", ");
+        }
+
+        System.out.println();
     }
 
     public int getParent(int index) {
@@ -91,5 +116,11 @@ public class MaxHeap {
         return 2 * index + (left ? 1 : 2);
     }
 
+    public int peek() {
+        if(isEmpty()) {
+           throw new IndexOutOfBoundsException("Heap is empty");
+        }
 
+        return heap[0];
+    }
 }
