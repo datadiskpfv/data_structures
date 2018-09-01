@@ -17,7 +17,14 @@ public class BinarySearchTree {
         intTree.insert(17);
         System.out.println("Tree created");
 
+        System.out.print("IN Order: ");
         intTree.traverseInOrder();
+
+        System.out.print("PRE Order: ");
+        intTree.traversePreOrder();
+
+        System.out.print("POST Order: ");
+        intTree.traversePostOrder();
 
         System.out.println(intTree.get(27));
         System.out.println(intTree.get(17));
@@ -26,5 +33,22 @@ public class BinarySearchTree {
         System.out.println();
         System.out.println("MIN value = " + intTree.min());
         System.out.println("MAX value = " + intTree.max());
+        System.out.println();
+
+        intTree.delete(15);
+        intTree.traverseInOrder();
+        System.out.println();
+
+        intTree.delete(17);
+        intTree.traverseInOrder();
+        System.out.println();
+
+        intTree.delete(25);
+        intTree.traverseInOrder();
+        System.out.println();
+
+        intTree.delete(8888);
+        intTree.traverseInOrder();
+        System.out.println();
     }
 }
