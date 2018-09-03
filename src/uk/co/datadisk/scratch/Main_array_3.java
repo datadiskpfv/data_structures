@@ -1,6 +1,6 @@
 package uk.co.datadisk.scratch;
 
-public class Main_Arraylist_3 {
+public class Main_array_3 {
 
     public static void main(String[] args) {
 

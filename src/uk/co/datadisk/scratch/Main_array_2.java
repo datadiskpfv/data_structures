@@ -3,7 +3,7 @@ package uk.co.datadisk.scratch;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-public class Main_Arraylist_2 {
+public class Main_array_2 {
 
     public static void main(String[] args) {
 
