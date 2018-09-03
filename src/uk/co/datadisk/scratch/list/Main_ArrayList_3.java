@@ -34,5 +34,4 @@ public class Main_ArrayList_3 {
         }
         System.out.println();
     }
-
 }

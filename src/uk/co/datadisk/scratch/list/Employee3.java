@@ -44,6 +44,7 @@ public class Employee3 implements Comparable<Employee3>{
     return firstName + ' ' + lastName;
   }
 
+  // equals and hashCode Used to Compare objects to see if they are the same object or have same contents
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -60,6 +61,7 @@ public class Employee3 implements Comparable<Employee3>{
     return Objects.hash(firstName, lastName, id);
   }
 
+  // Used for Sorting Algorithms
   @Override
   public int compareTo(Employee3 emp) {
     //let's sort the employee based on id in ascending order
