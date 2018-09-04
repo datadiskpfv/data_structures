@@ -32,6 +32,11 @@ public class Main_ArrayList_1 {
         endTime = System.nanoTime();
         System.out.println("Elapsed Time (lambda): " + (endTime - startTime));
 
+        startTime = System.nanoTime();
+        System.out.println(a1.get(2));
+        endTime = System.nanoTime();
+        System.out.println("Elapsed Time (for loop): " + (endTime - startTime));
+
     }
 
     private static void displayArray(List<Integer> input) {
