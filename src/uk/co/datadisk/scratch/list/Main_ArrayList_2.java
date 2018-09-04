@@ -10,8 +10,9 @@ public class Main_ArrayList_2 {
 
         // Arraylist can only be used by Objects (no primitive types)
         // Backed by a resizeable Array and can contain nulls
-        // Growing the is done automatically but does take time, use ensureCapacity first for lots of adding
+        // Growing the Array is done automatically but does take time, use ensureCapacity first for lots of adding
         // ArrayList is not synchronized, wrap using the Collections.synchronizedList or use Vector
+        // ArrayLists can have duplicates
 
         // Try to use the List class as it make it easy to swap to use a different List type (ArrayList or LinkedList)
         List<Integer> a1 = new ArrayList<>();

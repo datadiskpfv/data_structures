@@ -1,14 +1,20 @@
 package uk.co.datadisk.scratch.list;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main_ArrayList_1 {
 
     public static void main(String[] args) {
 
         // Arraylist can only be used by Objects (no primitive types)
+        // Backed by a resizeable Array and can contain nulls
+        // Growing Array the is done automatically but does take time, use ensureCapacity first for lots of adding
+        // ArrayList is not synchronized, wrap using the Collections.synchronizedList or use Vector
+        // ArrayLists can have duplicates
 
-        ArrayList<Integer> a1 = new ArrayList<>();
+        // Try to use the List class as it make it easy to swap to use a different List type (ArrayList or LinkedList)
+        List<Integer> a1 = new ArrayList<>();
 
         a1.add(5);
         a1.add(3);
@@ -28,7 +34,7 @@ public class Main_ArrayList_1 {
 
     }
 
-    private static void displayArray(ArrayList<Integer> input) {
+    private static void displayArray(List<Integer> input) {
 
         // This is known as an external iterator
         for (Integer i: input) {
@@ -37,7 +43,7 @@ public class Main_ArrayList_1 {
         System.out.println();
     }
 
-    private static void displayArrayLambda(ArrayList<Integer> input){
+    private static void displayArrayLambda(List<Integer> input){
         //input.forEach(System.out::print);         // unable to add extra string info, but useful to display numbers only
 
         // This is known as an internal iterator
