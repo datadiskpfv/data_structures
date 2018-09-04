@@ -7,9 +7,9 @@ public class Main_LinkedHashMap_1 {
 
     public static void main(String[] args) {
 
-        // Same as HashMap but order as you entered them
+        // Same as HashMap but order is as you entered (added) them
 
-        LinkedHashMap<String, Integer> map1 = new LinkedHashMap<>();
+        Map<String, Integer> map1 = new LinkedHashMap<>();
 
         map1.put("Paul", 16);
         map1.put("Lorraine", 46);
