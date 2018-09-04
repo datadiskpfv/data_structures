@@ -1,6 +1,7 @@
 package uk.co.datadisk.scratch.list;
 
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -40,6 +41,10 @@ public class Main_LinkedList_1 {
 
         // SORT by ID using a Comparator Class for Employee4
         Collections.sort(ll1, new EmployeeComparatorID());
+        displayList(ll1);
+
+        // SORT by ID using a Comparator and LAMBDA
+        Collections.sort(ll1, Comparator.comparing(Employee4::getFirstName));
         displayList(ll1);
     }
 

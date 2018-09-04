@@ -60,7 +60,7 @@ public class Employee4 implements Comparable<Employee4> {
         return Objects.hash(firstName, lastName, id);
     }
 
-    // Used for Sorting Algorithms
+    // Used for Sorting Algorithms (the Comparable Interface)
     @Override
     public int compareTo(Employee4 emp) {
         //let's sort the employee based on id in ascending order
