@@ -26,7 +26,7 @@ public class Main_LinkedList_1 {
         employees.add(emp4);
         displayArray(employees);
 
-        employees.offer(emp5);       // add = end, push = top, offer = end
+        employees.offer(emp5);       // add = end, offer = end, push = top
         displayArray(employees);
 
         // peek - look at top of list but don't remove
