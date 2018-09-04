@@ -1,11 +1,11 @@
-package uk.co.datadisk.scratch.list;
+package uk.co.datadisk.scratch.comparableComparator;
 
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Main_LinkedList_1 {
+public class Main_Comparing_1 {
 
     public static void main(String[] args) {
 

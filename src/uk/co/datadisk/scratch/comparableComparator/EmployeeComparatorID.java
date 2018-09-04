@@ -1,4 +1,6 @@
-package uk.co.datadisk.scratch.list;
+package uk.co.datadisk.scratch.comparableComparator;
+
+import uk.co.datadisk.scratch.comparableComparator.Employee4;
 
 import java.util.Comparator;
 

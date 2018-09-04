@@ -1,4 +1,4 @@
-package uk.co.datadisk.scratch.list;
+package uk.co.datadisk.scratch.comparableComparator;
 
 import java.util.Comparator;
 import java.util.Objects;
