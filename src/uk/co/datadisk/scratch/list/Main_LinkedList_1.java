@@ -22,15 +22,15 @@ public class Main_LinkedList_1 {
         ll1.add(emp4);
         displayList(ll1);
 
-        // SORT by ID using a Comparator
+        // SORT by ID using a Static Comparator
         Collections.sort(ll1, Employee4.employeeIDComparator);
         displayList(ll1);
 
-        // SORT by First Name using a Comparator
+        // SORT by First Name using a Static Comparator
         Collections.sort(ll1, Employee4.employeeFirstNameComparator);
         displayList(ll1);
 
-        // SORT by ID using a Comparator (refactored to use a Comparator)
+        // SORT by ID using a Static Comparator (refactored to use a Comparator)
         Collections.sort(ll1, Employee4.employeeIDComparatorComparator);
         displayList(ll1);
 
@@ -38,7 +38,7 @@ public class Main_LinkedList_1 {
         Collections.sort(ll1);
         displayList(ll1);
 
-        // SORT by ID using a Comparator Class
+        // SORT by ID using a Comparator Class for Employee4
         Collections.sort(ll1, new EmployeeComparatorID());
         displayList(ll1);
     }
