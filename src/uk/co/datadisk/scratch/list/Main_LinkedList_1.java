@@ -26,23 +26,23 @@ public class Main_LinkedList_1 {
         displayList(ll1);
 
         // SORT by ID using a Static Comparator
-        Collections.sort(ll1, Employee4.employeeIDComparator);
+        ll1.sort(Employee4.employeeIDComparator);
         displayList(ll1);
 
         // SORT by First Name using a Static Comparator
-        Collections.sort(ll1, Employee4.employeeFirstNameComparator);
+        ll1.sort(Employee4.employeeFirstNameComparator);
         displayList(ll1);
 
         // SORT by ID using a Static Comparator (refactored to use a Comparator)
-        Collections.sort(ll1, Employee4.employeeIDComparatorComparator);
+        ll1.sort(Employee4.employeeIDComparatorComparator);
         displayList(ll1);
 
         // SORT by ID using a Comparator Class for Employee4
-        Collections.sort(ll1, new EmployeeComparatorID());
+        ll1.sort(new EmployeeComparatorID());
         displayList(ll1);
 
         // SORT by First Name using a Comparator and LAMBDA's
-        Collections.sort(ll1, Comparator.comparing(Employee4::getFirstName).thenComparing(Employee4::getId).reversed());
+        ll1.sort(Comparator.comparing(Employee4::getFirstName).thenComparing(Employee4::getId).reversed());
         displayList(ll1);
 
         // SORT by using Comparable in Employee4 (compareTo method in Employee4)
