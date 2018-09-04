@@ -43,7 +43,7 @@ public class Main_LinkedList_1 {
         Collections.sort(ll1, new EmployeeComparatorID());
         displayList(ll1);
 
-        // SORT by ID using a Comparator and LAMBDA
+        // SORT by First Name using a Comparator and LAMBDA
         Collections.sort(ll1, Comparator.comparing(Employee4::getFirstName));
         displayList(ll1);
     }
