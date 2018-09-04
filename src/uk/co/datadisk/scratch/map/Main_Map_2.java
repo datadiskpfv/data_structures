@@ -24,6 +24,7 @@ public class Main_Map_2 {
         PersonKey p6 = new PersonKey("Graham", "Moffatt");
         PersonKey p7 = new PersonKey("Moore", "Marriott");
 
+        // Lets use a PersonKey object as the key
         Map<PersonKey, Integer> map1 = new HashMap<>();
 
         map1.put(p1, 50);
@@ -38,6 +39,9 @@ public class Main_Map_2 {
         // to sort a HashMap create a TreeMap and use the comparable compareTo method to sort
         TreeMap treeMap1 = new TreeMap(map1);
         displayMapLambda(treeMap1);
+
+        System.out.println("Will Hay exist ? " + map1.containsKey(p5));
+        System.out.println("Will Hay age is " + map1.get(p5));
     }
 
     private static void displayMapLambda(Map<PersonKey, Integer> input){
