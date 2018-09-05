@@ -9,8 +9,8 @@ public class Main_ArrayList_3 {
     public static void main(String[] args) {
 
         // Arraylist can only be used by Objects (no primitive types)
-        // Backed by a resizeable Array and can contain nulls
-        // Growing the Array is done automatically but does take time, use ensureCapacity first for lots of adding
+        // Backed by a resizeable array and can contain nulls
+        // Growing the array is done automatically but does take time, use ensureCapacity first for lots of adding
         // ArrayList is not synchronized, wrap using the Collections.synchronizedList or use Vector
         // ArrayLists can have duplicates
 
@@ -33,7 +33,7 @@ public class Main_ArrayList_3 {
         displayArray(employees);
 
         System.out.println("emp3 is found at index = " + employees.indexOf(emp3));
-        System.out.println("Does Array contain Lorraine Valle: " + employees.contains(emp2));
+        System.out.println("Does array contain Lorraine Valle: " + employees.contains(emp2));
 
         employees.remove(emp1);        // remove the duplicate Paul, you can also specify an index as well
         displayArray(employees);

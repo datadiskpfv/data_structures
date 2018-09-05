@@ -26,7 +26,7 @@ public class Main_Circular_Queue {
     queue.remove();
     queue.add(graham);
 
-    System.out.println("Queue Size: " + queue.size());
+    System.out.println("queue Size: " + queue.size());
 
     queue.printQueue();
 
@@ -49,7 +49,7 @@ public class Main_Circular_Queue {
     queue.remove();
     queue.remove();
 
-    System.out.println("Queue Size: " + queue.size());
+    System.out.println("queue Size: " + queue.size());
 
     queue.printQueue();
   }

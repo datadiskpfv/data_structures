@@ -25,7 +25,7 @@ public class Main_Arrays1 {
         myArray1[5] = 1;
         myArray1[6] = -22;
 
-        System.out.println("Array myArray1 size is " + myArray1.length);
+        System.out.println("array myArray1 size is " + myArray1.length);
 
         for( int i = 0; i < myArray1.length; i++){
             System.out.println(myArray1[i]);

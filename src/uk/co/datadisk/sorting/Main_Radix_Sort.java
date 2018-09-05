@@ -10,7 +10,7 @@ public class Main_Radix_Sort {
 
         radixSort(radixArray, 1, 4);
 
-        displayArray(radixArray, "Radix Array");
+        displayArray(radixArray, "Radix array");
     }
 
     public static void radixSort(int[] input, int radix, int width) {
@@ -50,7 +50,7 @@ public class Main_Radix_Sort {
     }
 
     public static void displayArray(int[] input, String name) {
-        System.out.print("Array " + name + " - ");
+        System.out.print("array " + name + " - ");
         for (int i = 0; i < input.length; i++) {
             System.out.print(input[i] + " ");
         }

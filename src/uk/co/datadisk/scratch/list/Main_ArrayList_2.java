@@ -9,8 +9,8 @@ public class Main_ArrayList_2 {
     public static void main(String[] args) {
 
         // Arraylist can only be used by Objects (no primitive types)
-        // Backed by a resizeable Array and can contain nulls
-        // Growing the Array is done automatically but does take time, use ensureCapacity first for lots of adding
+        // Backed by a resizeable array and can contain nulls
+        // Growing the array is done automatically but does take time, use ensureCapacity first for lots of adding
         // ArrayList is not synchronized, wrap using the Collections.synchronizedList or use Vector
         // ArrayLists can have duplicates
 

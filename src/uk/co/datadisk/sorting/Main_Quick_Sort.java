@@ -56,7 +56,7 @@ public class Main_Quick_Sort {
     }
 
     public static void displayArray(int[] input, String name) {
-        System.out.print("Array " + name + " - ");
+        System.out.print("array " + name + " - ");
         for (int i = 0; i < input.length; i++) {
             System.out.print(input[i] + " ");
         }
