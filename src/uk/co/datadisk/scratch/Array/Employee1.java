@@ -1,4 +1,4 @@
-package uk.co.datadisk.scratch;
+package uk.co.datadisk.scratch.Array;
 
 import java.util.Objects;
 

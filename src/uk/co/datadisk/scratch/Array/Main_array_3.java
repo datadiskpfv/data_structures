@@ -1,4 +1,4 @@
-package uk.co.datadisk.scratch;
+package uk.co.datadisk.scratch.Array;
 
 public class Main_array_3 {
 
