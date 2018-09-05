@@ -31,7 +31,7 @@ public class Main_MultiMap_1 {
 
         // Getting the size
         int size = myMultimap.size();
-        System.out.println(size);  // 4
+        System.out.println(size);  // size = 5
 
         // Getting values
         //Collection<String> fruits = myMultimap.get("Fruits");                 // used with Multimap
