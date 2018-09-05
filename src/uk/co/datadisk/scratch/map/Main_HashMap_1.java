@@ -3,7 +3,7 @@ package uk.co.datadisk.scratch.map;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Main_Map_1 {
+public class Main_HashMap_1 {
 
     public static void main(String[] args) {
 

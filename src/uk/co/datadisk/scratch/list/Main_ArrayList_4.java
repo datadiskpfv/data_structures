@@ -7,7 +7,9 @@ public class Main_ArrayList_4 {
 
     public static void main(String[] args) {
 
-        List<Integer> a1 = new ArrayList<>();
+        // Play around with final in various places
+
+        final List<Integer> a1 = new ArrayList<>();
 
         a1.add(5);
         a1.add(3);
@@ -20,9 +22,10 @@ public class Main_ArrayList_4 {
 
     }
 
-    private static void addElement(List<Integer> input) {
+    private static void addElement(final List<Integer> input) {
 
-        input = new ArrayList<>();
+        // note the error here
+        // input = new ArrayList<>();
 
         displayArray(input, "addElement");
     }

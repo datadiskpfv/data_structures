@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Main_Map_2 {
+public class Main_HashMap_2 {
 
     public static void main(String[] args) {
 
